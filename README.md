@@ -19,7 +19,7 @@ A Model Context Protocol (MCP) server that gives AI assistants the ability to an
 ### With Claude Code
 
 ```bash
-claude mcp add webcheck -- npx @anthropic-agents/webcheck-mcp
+claude mcp add webcheck -- npx webcheck-mcp
 ```
 
 ### With Claude Desktop
@@ -31,7 +31,7 @@ Add to your `claude_desktop_config.json`:
   "mcpServers": {
     "webcheck": {
       "command": "npx",
-      "args": ["@anthropic-agents/webcheck-mcp"]
+      "args": ["webcheck-mcp"]
     }
   }
 }
@@ -45,7 +45,7 @@ Add to your MCP configuration:
 {
   "webcheck": {
     "command": "npx",
-    "args": ["@anthropic-agents/webcheck-mcp"]
+    "args": ["webcheck-mcp"]
   }
 }
 ```
@@ -90,6 +90,12 @@ Issues:
 
 - Node.js 18+
 - That's it.
+
+## More Tools & Templates
+
+Want to build and monetize your own MCP server?
+
+👉 [MCP Server 开发变现实战包](https://ifdian.net/item/fdfddfb02c1311f1ae625254001e7c00) — includes TypeScript templates, market research data, niche analysis, monetization guide, and promotion templates. ¥19.9
 
 ## License
 

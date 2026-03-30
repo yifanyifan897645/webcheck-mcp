@@ -1,6 +1,6 @@
 {
   "name": "webcheck-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server for website health analysis — SEO, performance, accessibility, and security checks for any URL",
   "main": "dist/index.js",
   "type": "module",
