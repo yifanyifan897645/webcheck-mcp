@@ -91,6 +91,16 @@ Issues:
 - Node.js 18+
 - That's it.
 
+## Part of the MCP Toolkit
+
+**[View all servers →](https://yifanyifan897645.github.io/mcp-toolkit/)**
+
+- [webcheck-mcp](https://www.npmjs.com/package/webcheck-mcp) — Website health analysis
+- [git-summary-mcp](https://www.npmjs.com/package/git-summary-mcp) — Git repository intelligence
+- [mcp-checkup](https://www.npmjs.com/package/mcp-checkup) — MCP setup health analyzer
+- [dev-utils-mcp](https://www.npmjs.com/package/dev-utils-mcp) — Developer utilities
+- [codescan-mcp](https://www.npmjs.com/package/codescan-mcp) — Codebase health scanner
+
 ## More Tools & Templates
 
 Want to build and monetize your own MCP server?
