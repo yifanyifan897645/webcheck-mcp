@@ -1,8 +1,8 @@
 {
   "name": "webcheck-mcp",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "mcpName": "io.github.yifanyifan897645/webcheck",
-  "description": "MCP server for website health analysis — SEO, performance, accessibility, and security checks for any URL",
+  "description": "MCP server for website health analysis — SEO, performance, accessibility, and security checks for any URL | 网站健康分析MCP服务器",
   "main": "dist/index.js",
   "type": "module",
   "bin": {
@@ -28,7 +28,11 @@
     "ai-tools",
     "lighthouse",
     "broken-links",
-    "site-audit"
+    "site-audit",
+    "网站分析",
+    "SEO检测",
+    "网站体检",
+    "中文"
   ],
   "license": "MIT",
   "repository": {
