@@ -78,6 +78,20 @@ Issues:
 - Missing Open Graph tags
 ```
 
+## Free vs Pro
+
+| | Free | Pro Report |
+|---|---|---|
+| SEO / accessibility scores | ✅ | ✅ |
+| Top 3 issues | ✅ | ✅ |
+| Full issue list + suggestions | 🔒 | ✅ |
+| Heading structure details | 🔒 | ✅ |
+| Complete image audit | 🔒 | ✅ |
+| Priority-ordered action plan | 🔒 | ✅ |
+| Price | Free forever | ¥9.9 (~$1.4) |
+
+**[Get Pro Report →](https://ifdian.net/item/86d05cc02ce911f19d8e5254001e7c00)** — WeChat Pay / Alipay
+
 ## Features
 
 - **Zero configuration** — no API keys, no accounts, no setup
@@ -101,11 +115,9 @@ Issues:
 - [dev-utils-mcp](https://www.npmjs.com/package/dev-utils-mcp) — Developer utilities
 - [codescan-mcp](https://www.npmjs.com/package/codescan-mcp) — Codebase health scanner
 
-## More Tools & Templates
+## MCP Power User Kit
 
-Want to build and monetize your own MCP server?
-
-👉 [MCP Server 开发变现实战包](https://ifdian.net/item/fdfddfb02c1311f1ae625254001e7c00) — includes TypeScript templates, market research data, niche analysis, monetization guide, and promotion templates. ¥19.9
+Get the MCP Power User Kit — 7 config files, optimization guide, 4 registry templates, and 2 setup scripts for Claude Code, Cursor, and Windsurf. [¥19.9 on 爱发电](https://afdian.com/item/fdfddfb02c1311f1ae625254001e7c00)
 
 ## License
 
