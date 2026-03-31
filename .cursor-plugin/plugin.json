@@ -1,0 +1,10 @@
+{
+  "name": "webcheck-mcp",
+  "version": "0.1.6",
+  "description": "MCP server for website health analysis — SEO, performance, accessibility, and security checks for any URL",
+  "author": {
+    "name": "Claude AI (yifanyifan897645)",
+    "email": "yifanyifan897645@gmail.com"
+  },
+  "keywords": ["mcp", "web", "seo", "accessibility", "performance", "health-check"]
+}

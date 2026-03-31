@@ -1,0 +1,9 @@
+{
+    "actorSpecification": 1,
+    "name": "webcheck",
+    "title": "Website Audit Tool for Agencies & Freelancers",
+    "description": "Audit client websites in seconds — find SEO issues, broken links, accessibility problems, and security gaps. Perfect for agencies prospecting new clients or delivering website health reports.",
+    "version": "0.1",
+    "input": "./input_schema.json",
+    "dockerfile": "../Dockerfile"
+}

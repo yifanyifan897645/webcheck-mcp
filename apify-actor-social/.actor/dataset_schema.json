@@ -1,0 +1,28 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "username",
+                    "engagement.engagementRate",
+                    "engagement.avgViewsPerVideo",
+                    "profileStats.followers",
+                    "growthSignals.engagementTier"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "username": { "label": "Username", "format": "text" },
+                    "engagement.engagementRate": { "label": "Engagement %", "format": "number" },
+                    "engagement.avgViewsPerVideo": { "label": "Avg Views", "format": "number" },
+                    "profileStats.followers": { "label": "Followers", "format": "number" },
+                    "growthSignals.engagementTier": { "label": "Tier", "format": "text" }
+                }
+            }
+        }
+    }
+}

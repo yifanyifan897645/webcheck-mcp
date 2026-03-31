@@ -1,0 +1,52 @@
+{
+    "title": "TikTok Profile & Video Analyzer",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "profiles": {
+            "title": "TikTok Usernames",
+            "type": "array",
+            "description": "TikTok usernames to analyze (without @). Example: charlidamelio",
+            "editor": "stringList",
+            "prefill": ["tiktok"],
+            "items": { "type": "string" }
+        },
+        "videoUrls": {
+            "title": "TikTok Video URLs",
+            "type": "array",
+            "description": "Specific TikTok video URLs to analyze. Example: https://www.tiktok.com/@user/video/1234567890",
+            "editor": "stringList",
+            "items": { "type": "string" }
+        },
+        "analysisDepth": {
+            "title": "Analysis Depth",
+            "type": "string",
+            "description": "How deep to analyze each profile",
+            "editor": "select",
+            "default": "standard",
+            "enum": ["quick", "standard", "deep"],
+            "enumTitles": [
+                "Quick - Profile stats + top metrics only",
+                "Standard - Stats + recent videos + engagement analysis",
+                "Deep - Full analysis with posting patterns and content themes"
+            ]
+        },
+        "maxVideosPerProfile": {
+            "title": "Max Videos Per Profile",
+            "type": "integer",
+            "description": "Maximum number of recent videos to analyze per profile",
+            "default": 30,
+            "minimum": 5,
+            "maximum": 100
+        },
+        "proxyConfig": {
+            "title": "Proxy Configuration",
+            "type": "object",
+            "description": "Proxy settings for accessing TikTok (recommended for reliability)",
+            "editor": "proxy",
+            "sectionCaption": "Proxy",
+            "sectionDescription": "TikTok may block requests without proxies. Using Apify residential proxies is recommended."
+        }
+    },
+    "required": []
+}

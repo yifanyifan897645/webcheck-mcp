@@ -143,77 +143,34 @@ server.tool(
   }
 );
 
-const FREE_ISSUE_LIMIT = 3;
 const PRO_URL = "https://ifdian.net/item/86d05cc02ce911f19d8e5254001e7c00";
 
-function applyFreemiumLimits(result: any): { free: any; hiddenCount: number } {
-  const r = JSON.parse(JSON.stringify(result)); // deep clone
-  let hiddenCount = 0;
-
-  // Limit issues arrays
+function countFindings(result: any): number {
+  let count = 0;
   for (const key of ["issues", "suggestions", "priorities"]) {
-    if (Array.isArray(r[key]) && r[key].length > FREE_ISSUE_LIMIT) {
-      hiddenCount += r[key].length - FREE_ISSUE_LIMIT;
-      r[key] = r[key].slice(0, FREE_ISSUE_LIMIT);
-    }
+    if (Array.isArray(result[key])) count += result[key].length;
   }
-  // Nested seo.issues / seo.suggestions
-  if (r.seo) {
+  if (result.seo) {
     for (const key of ["issues", "suggestions"]) {
-      if (Array.isArray(r.seo[key]) && r.seo[key].length > FREE_ISSUE_LIMIT) {
-        hiddenCount += r.seo[key].length - FREE_ISSUE_LIMIT;
-        r.seo[key] = r.seo[key].slice(0, FREE_ISSUE_LIMIT);
-      }
+      if (Array.isArray(result.seo[key])) count += result.seo[key].length;
     }
   }
-  // Limit images detail
-  if (r.images?.problematicImages && r.images.problematicImages.length > 3) {
-    hiddenCount += r.images.problematicImages.length - 3;
-    r.images.problematicImages = r.images.problematicImages.slice(0, 3);
-  }
-  if (r.images?.images && r.images.images.length > 5) {
-    hiddenCount += r.images.images.length - 5;
-    r.images.images = r.images.images.slice(0, 5);
-  }
-  // Limit broken links detail
-  if (r.broken && r.broken.length > 3) {
-    hiddenCount += r.broken.length - 3;
-    r.broken = r.broken.slice(0, 3);
-  }
-  // Redact headings structure detail (keep counts only)
-  if (r.headings?.structure) {
-    const counts: Record<string, number> = {};
-    for (const [level, items] of Object.entries(r.headings.structure)) {
-      counts[level] = (items as string[]).length;
-    }
-    r.headings.structure = counts;
-    r.headings._note = "Full heading text available in Pro Report";
-  }
-  // Nested seo headings
-  if (r.seo?.headings) {
-    const counts: Record<string, number> = {};
-    for (const [level, items] of Object.entries(r.seo.headings)) {
-      counts[level] = (items as string[]).length;
-    }
-    r.seo.headings = counts;
-  }
-
-  return { free: r, hiddenCount };
+  return count;
 }
 
 function withProTip(result: any): { content: Array<{ type: "text"; text: string }> } {
-  const { free, hiddenCount } = applyFreemiumLimits(result);
+  const findings = countFindings(result);
 
-  let proTip = "\n\n---\n🔒 FREE TIER";
-  if (hiddenCount > 0) {
-    proTip += ` — ${hiddenCount} additional findings hidden.`;
+  let proTip = `\n\n---`;
+  if (findings > 0) {
+    proTip += `\n⚡ Found ${findings} issues. Want a step-by-step fix plan with code snippets + priority ranking?`;
   }
-  proTip += `\n📊 Unlock FULL report: all issues, detailed suggestions, heading analysis, and priority-ordered action plan.`;
-  proTip += `\n👉 Pro Report (¥9.9 / ~$1.4): ${PRO_URL}`;
+  proTip += `\n📊 Pro Report (¥9.9 / ~$1.4): personalized fix guide, competitor benchmarks, monthly tracking`;
+  proTip += `\n👉 ${PRO_URL}`;
 
   return {
     content: [
-      { type: "text", text: JSON.stringify(free, null, 2) + proTip },
+      { type: "text", text: JSON.stringify(result, null, 2) + proTip },
     ],
   };
 }

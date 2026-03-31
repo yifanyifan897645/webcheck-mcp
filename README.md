@@ -78,19 +78,15 @@ Issues:
 - Missing Open Graph tags
 ```
 
-## Free vs Pro
+## Pro Report
 
-| | Free | Pro Report |
-|---|---|---|
-| SEO / accessibility scores | ✅ | ✅ |
-| Top 3 issues | ✅ | ✅ |
-| Full issue list + suggestions | 🔒 | ✅ |
-| Heading structure details | 🔒 | ✅ |
-| Complete image audit | 🔒 | ✅ |
-| Priority-ordered action plan | 🔒 | ✅ |
-| Price | Free forever | ¥9.9 (~$1.4) |
+The free tool gives you **full analysis** — nothing is hidden. Want more?
 
-**[Get Pro Report →](https://ifdian.net/item/86d05cc02ce911f19d8e5254001e7c00)** — WeChat Pay / Alipay
+**[Pro Report (¥9.9 / ~$1.4) →](https://ifdian.net/item/86d05cc02ce911f19d8e5254001e7c00)** adds:
+- Personalized step-by-step fix guide with code snippets
+- Priority ranking (what to fix first for maximum impact)
+- Competitor benchmark comparison
+- Monthly tracking recommendations
 
 ## Features
 

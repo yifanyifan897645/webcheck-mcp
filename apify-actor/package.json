@@ -1,0 +1,21 @@
+{
+    "name": "webcheck-actor",
+    "version": "0.1.0",
+    "description": "Apify Actor for website health analysis — SEO, accessibility, performance, security, broken links",
+    "type": "module",
+    "main": "dist/main.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/main.js",
+        "dev": "tsx src/main.ts"
+    },
+    "dependencies": {
+        "apify": "^3.2.0"
+    },
+    "devDependencies": {
+        "typescript": "^5.7.0",
+        "tsx": "^4.19.0",
+        "@types/node": "^22.0.0"
+    },
+    "license": "MIT"
+}

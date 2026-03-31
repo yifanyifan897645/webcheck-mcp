@@ -1,0 +1,45 @@
+{
+    "title": "Website Audit Tool for Agencies & Freelancers",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "urls": {
+            "title": "Client URLs to audit",
+            "type": "array",
+            "description": "Paste your prospect or client website URLs. Each URL gets a full audit you can use in proposals, reports, or sales calls.",
+            "editor": "stringList",
+            "prefill": ["https://example.com"],
+            "items": { "type": "string" }
+        },
+        "checks": {
+            "title": "Audit modules",
+            "type": "array",
+            "description": "Choose which audits to run. Use all four for a comprehensive client report, or pick specific ones for a quick prospect scan.",
+            "editor": "select",
+            "default": ["full", "seo", "accessibility", "links"],
+            "items": {
+                "type": "string",
+                "enum": ["full", "seo", "accessibility", "links"],
+                "enumTitles": ["Full Analysis (SEO + Security + Performance)", "Detailed SEO Audit", "Accessibility Check", "Broken Link Finder"]
+            }
+        },
+        "maxLinksPerPage": {
+            "title": "Max links to check per page",
+            "type": "integer",
+            "description": "How many links to verify per page during the broken link audit. Higher = more thorough report, but takes longer. Default of 50 is good for prospect audits; use 150+ for full client deliverables.",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 200
+        },
+        "reportFormat": {
+            "title": "Report format",
+            "type": "string",
+            "description": "Choose 'summary' for a quick prospect audit (key issues only, great for sales calls) or 'detailed' for a full client report (every finding with fix instructions, great for deliverables).",
+            "editor": "select",
+            "default": "summary",
+            "enum": ["summary", "detailed"],
+            "enumTitles": ["Summary — Quick prospect audit", "Detailed — Full client report"]
+        }
+    },
+    "required": ["urls"]
+}

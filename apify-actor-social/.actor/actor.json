@@ -1,0 +1,12 @@
+{
+    "actorSpecification": 1,
+    "name": "tiktok-profile-analyzer",
+    "title": "TikTok Profile & Video Analyzer",
+    "description": "Analyze TikTok profiles and videos: engagement rates, posting patterns, content performance, and growth metrics. Structured JSON output for marketers and agencies.",
+    "version": "0.1",
+    "input": "./input_schema.json",
+    "dockerfile": "../Dockerfile",
+    "storages": {
+        "dataset": "./dataset_schema.json"
+    }
+}
