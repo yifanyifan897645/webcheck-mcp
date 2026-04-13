@@ -10,7 +10,9 @@
 
 一个 MCP (Model Context Protocol) 服务器，让 AI 助手能够自动分析任意网站的 SEO、无障碍性、安全性和性能问题。
 
-**每周 600+ 次下载** — 5 个强大工具，无需 API Key，开箱即用。
+[![npm downloads](https://img.shields.io/npm/dw/webcheck-mcp)](https://www.npmjs.com/package/webcheck-mcp)
+
+5 个强大工具，无需 API Key，开箱即用。
 
 ### 工具列表
 
@@ -73,20 +75,10 @@ claude mcp add webcheck -- npx webcheck-mcp
 
 免费版提供**完整分析数据**——没有任何隐藏。想要更多？
 
-**[Pro Report (¥9.9) →](https://ifdian.net/item/86d05cc02ce911f19d8e5254001e7c00)** 额外提供：
-- 个性化修复指南（含代码片段）
-- 优先级排序（先修什么影响最大）
-- 竞品对标分析
-- 月度追踪建议
-
-### MCP 开发模板包
-
-想自己开发 MCP Server？从模板开始，跳过踩坑阶段。
-
-**[MCP开发实战模板包 (¥19.9) →](https://mbd.pub/o/bread/YZWclJhxaA==)** 包含：
-- 完整 MCP Server 代码模板（TypeScript）
-- npm 发布检查清单
-- 多平台配置指南（Claude/Cursor/Windsurf）
+**[行业配置模板包 (¥9.9) →](https://mbd.pub/o/bread/YZWclZ9sZA==)** 包含：
+- 10个行业场景的完整工作流（电商/SaaS/SEO代理/DevOps等）
+- 直接复制粘贴的提示词模板
+- 行业对标基准线和行动清单
 
 ---
 
@@ -96,7 +88,9 @@ claude mcp add webcheck -- npx webcheck-mcp
 
 A Model Context Protocol (MCP) server that gives AI assistants the ability to analyze any website for SEO, accessibility, security, and performance issues.
 
-**600+ weekly downloads** — 5 powerful tools, no API keys required.
+[![npm downloads](https://img.shields.io/npm/dw/webcheck-mcp)](https://www.npmjs.com/package/webcheck-mcp)
+
+5 powerful tools, no API keys required.
 
 ### Tools
 
@@ -159,11 +153,10 @@ Once installed, just ask your AI assistant:
 
 The free tool gives you **full analysis** — nothing is hidden. Want more?
 
-**[Pro Report (¥9.9 / ~$1.4) →](https://ifdian.net/item/86d05cc02ce911f19d8e5254001e7c00)** adds:
-- Personalized step-by-step fix guide with code snippets
-- Priority ranking (what to fix first for maximum impact)
-- Competitor benchmark comparison
-- Monthly tracking recommendations
+**[Industry Templates (¥9.9 / ~$1.4) →](https://mbd.pub/o/bread/YZWclZ9sZA==)** includes:
+- 10 ready-to-use workflows (e-commerce, SaaS, SEO agency, DevOps & more)
+- Copy-paste prompt templates for each industry
+- Industry benchmarks and action checklists
 
 ## Part of the MCP Toolkit
 
