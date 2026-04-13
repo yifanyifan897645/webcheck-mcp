@@ -1,6 +1,6 @@
 {
   "name": "webcheck-mcp",
-  "version": "0.3.0",
+  "version": "0.3.6",
   "mcpName": "io.github.yifanyifan897645/webcheck",
   "description": "MCP server for website health analysis — SEO, performance, accessibility, and security checks for any URL | 网站健康分析MCP服务器",
   "main": "dist/index.js",

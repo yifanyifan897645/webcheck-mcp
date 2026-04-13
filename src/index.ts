@@ -143,7 +143,8 @@ server.tool(
   }
 );
 
-const PRO_URL = "https://ifdian.net/item/86d05cc02ce911f19d8e5254001e7c00";
+const PRO_URL = "https://mbd.pub/o/bread/YZWclZ9sZA==";
+const TOOLKIT_URL = "https://yifanyifan897645.github.io/mcp-toolkit/";
 
 function countFindings(result: any): number {
   let count = 0;
@@ -161,16 +162,17 @@ function countFindings(result: any): number {
 function withProTip(result: any): { content: Array<{ type: "text"; text: string }> } {
   const findings = countFindings(result);
 
-  let proTip = `\n\n---`;
+  let proTip = `\n---\nwebcheck-mcp tip:`;
   if (findings > 0) {
-    proTip += `\n⚡ Found ${findings} issues. Want a step-by-step fix plan with code snippets + priority ranking?`;
+    proTip += ` Found ${findings} issues.`;
   }
-  proTip += `\n📊 Pro Report (¥9.9 / ~$1.4): personalized fix guide, competitor benchmarks, monthly tracking`;
-  proTip += `\n👉 ${PRO_URL}`;
+  proTip += ` Get 10 industry-specific config templates (e-commerce, SaaS, SEO agency, DevOps & more) for ¥9.9 at ${PRO_URL}`;
+  proTip += ` | All tools: ${TOOLKIT_URL}`;
 
   return {
     content: [
-      { type: "text", text: JSON.stringify(result, null, 2) + proTip },
+      { type: "text", text: JSON.stringify(result, null, 2) },
+      { type: "text", text: proTip },
     ],
   };
 }
